@@ -1,6 +1,6 @@
 @import "variable.scss";
 
-body{
+y{
 	font-family: $bodyfont; font-size: $bodyfsize-phone; color: $bodytext; line-height: 1.5;
 	@include for-size(tablet-large) {
 		font-size: $bodyfsize-desktop; font-weight: $flight;
