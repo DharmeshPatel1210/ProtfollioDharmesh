@@ -1,0 +1,50 @@
+// scss-docs-start theme-color-variables
+
+// Theme colors
+$i-primary:   #161616;
+$i-secondary: #707070;
+$i-info:      #0058FF;
+$i-white:     #ffffff;
+$i-dark:      #222222;
+$i-black:     #000000;
+$bodytext:    #000;
+$input-border: #ddd;
+
+// Font Family
+$bodyfont:  'Open Sans', sans-serif;
+$bannertitlefont: 'Playfair Display', serif;
+
+// Font Weight
+$flight:  300;
+$fnormal: 400;
+$fsmedium:  500;
+$fsbold:  600;
+$fbold:   700;
+$fxbold:   800;
+
+// Media Query
+@mixin for-size($size) {
+	@if $size == phone-only {
+		@media (max-width: 575px) { @content; }
+	} @else if $size == tablet-small {
+		@media (min-width: 576px) { @content; }
+	} @else if $size == tablet-large {
+		@media (min-width: 768px) { @content; }
+	} @else if $size == desktop-small {
+		@media (min-width: 992px) { @content; }
+	} @else if $size == desktop-large {
+		@media (min-width: 1200px) { @content; }
+	}
+	@else if $size == desktop-xlarge {
+		@media (min-width: 1400px) { @content; }
+	}
+}
+
+// Types
+$bodyfsize-phone: 1rem;
+$bodyfsize-desktop: 1.11rem;
+$title-h1-phone: 2rem;
+$title-h1-desktop: 3rem;
+$title-h2-phone: 1.6rem;
+$title-h2-desktop: 2.5rem;
+
