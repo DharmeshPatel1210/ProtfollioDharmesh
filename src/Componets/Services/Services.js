@@ -39,6 +39,7 @@ const Services = () => {
                     detail = {'It is a long established fact that a reader a page when looking at its layout.'}
                 />
             </div>
+            <div className="blur s-blur2" style={{background:"var(--purple)"}}></div>
         </div>
     </div>
   )
